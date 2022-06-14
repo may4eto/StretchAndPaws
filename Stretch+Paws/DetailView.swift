@@ -41,7 +41,10 @@ struct DetailView: View {
                             .foregroundColor(Color("Highlight"))
                         Text(pose.topTip)
                     }
-                }.padding(.horizontal, 20)
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 100)
+                
             }
             TimerPanelView(timerOpen: $timerOpen)
         }
@@ -89,6 +92,7 @@ struct TimerOpenView: View {
     var body: some View {
         VStack {
             Text("Hold the pose")
+                .font(.title3)
                 .fontWeight(.medium)
             Spacer()
             Text("Try staying in this pose for 30 seconds. If you need to come out sooner,  that’s OK.")
@@ -110,6 +114,7 @@ struct TimerOpenView: View {
 struct TimerClosedView: View {
     var body: some View {
         Text("Try it out")
+            .font(.title3)
             .fontWeight(.medium)
             .padding(20)
         Spacer()
