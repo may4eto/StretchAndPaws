@@ -55,12 +55,12 @@
 		3BA78B432858C4E20043DA3B /* Stretch+Paws */ = {
 			isa = PBXGroup;
 			children = (
+				3BA78B542858E09E0043DA3B /* Pose.swift */,
 				3BA78B442858C4E20043DA3B /* Stretch_PawsApp.swift */,
 				3BA78B462858C4E20043DA3B /* ContentView.swift */,
 				3BA78B522858DDE90043DA3B /* DetailView.swift */,
 				3BA78B482858C4E60043DA3B /* Assets.xcassets */,
 				3BA78B4A2858C4E60043DA3B /* Preview Content */,
-				3BA78B542858E09E0043DA3B /* Pose.swift */,
 			);
 			path = "Stretch+Paws";
 			sourceTree = "<group>";
