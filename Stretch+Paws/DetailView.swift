@@ -73,9 +73,9 @@ struct TimerPanelView: View {
                 timerOpen ? AnyView(TimerOpenView()) : AnyView(TimerClosedView())
             }
             .foregroundColor(Color("Secondary"))
-            .frame(maxWidth: .infinity, maxHeight: timerOpen ? 200 : 80)
-            .background(Color("Highlight"))
-            .cornerRadius(20)
+            .frame(maxWidth: .infinity, maxHeight: timerOpen ? 400 : 80)
+            .background(RoundedCornersShape(corners: [.topLeft, .topRight], radius: 20).fill(Color("Highlight")))
+            
         }
         .ignoresSafeArea()
         .onTapGesture {
@@ -87,12 +87,44 @@ struct TimerPanelView: View {
 
 struct TimerOpenView: View {
     var body: some View {
+        VStack {
             Text("Hold the pose")
+                .fontWeight(.medium)
+            Spacer()
+            Text("Try staying in this pose for 30 seconds. If you need to come out sooner,  that’s OK.")
+                .multilineTextAlignment(.center)
+            Spacer()
+            Text("00:30")
+                .font(.system(size: 96))
+            Spacer()
+            Button {} label: {Text("Start the timer")}
+                .frame(width: 300, height: 50)
+                .background(Color("Secondary"))
+                .foregroundColor(Color("Primary"))
+                .cornerRadius(25)
+        }
+        .padding(30)
     }
 }
 
 struct TimerClosedView: View {
     var body: some View {
         Text("Try it out")
+            .fontWeight(.medium)
+            .padding(20)
+        Spacer()
     }
 }
+
+struct RoundedCornersShape: Shape {
+    let corners: UIRectCorner
+    let radius: CGFloat
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect,
+                                byRoundingCorners: corners,
+                                cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+ 
