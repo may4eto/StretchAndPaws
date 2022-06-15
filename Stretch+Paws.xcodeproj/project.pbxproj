@@ -14,6 +14,7 @@
 		3BA78B532858DDE90043DA3B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA78B522858DDE90043DA3B /* DetailView.swift */; };
 		3BA78B552858E09E0043DA3B /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA78B542858E09E0043DA3B /* Pose.swift */; };
 		3BA78B5728593E2F0043DA3B /* YogaTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA78B5628593E2F0043DA3B /* YogaTimer.swift */; };
+		3BA78B592859E3C90043DA3B /* chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3BA78B582859E3C80043DA3B /* chime.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3BA78B522858DDE90043DA3B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3BA78B542858E09E0043DA3B /* Pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
 		3BA78B5628593E2F0043DA3B /* YogaTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaTimer.swift; sourceTree = "<group>"; };
+		3BA78B582859E3C80043DA3B /* chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				3BA78B442858C4E20043DA3B /* Stretch_PawsApp.swift */,
 				3BA78B462858C4E20043DA3B /* ContentView.swift */,
 				3BA78B522858DDE90043DA3B /* DetailView.swift */,
+				3BA78B582859E3C80043DA3B /* chime.wav */,
 				3BA78B482858C4E60043DA3B /* Assets.xcassets */,
 				3BA78B4A2858C4E60043DA3B /* Preview Content */,
 			);
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA78B592859E3C90043DA3B /* chime.wav in Resources */,
 				3BA78B4C2858C4E60043DA3B /* Preview Assets.xcassets in Resources */,
 				3BA78B492858C4E60043DA3B /* Assets.xcassets in Resources */,
 			);
