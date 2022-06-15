@@ -74,7 +74,7 @@ class YogaTimer: ObservableObject {
     if timerEnded {
       return "You did it!"
     } else {
-      return "Hold that pose"
+      return "Hold the pose"
     }
   }
   
