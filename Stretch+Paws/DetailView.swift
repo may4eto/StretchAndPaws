@@ -141,7 +141,7 @@ struct CountdownView: View {
     @ObservedObject var yogaTimer: YogaTimer
     var body: some View {
         Text(yogaTimer.timerDuration < 10 ? "00:0\(yogaTimer.timerDuration)" : "00:\(yogaTimer.timerDuration)")
-            .font(.system(size: 96))
+            .font(.system(size: 96).monospacedDigit())
     }
 }
 
