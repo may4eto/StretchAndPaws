@@ -38,8 +38,8 @@ struct ContentView: View {
             }
         }
         .onAppear() {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                withAnimation(Animation.easeInOut(duration: 2)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation(Animation.easeInOut(duration: 1)) {
                     isActive = true
                 }
             }
