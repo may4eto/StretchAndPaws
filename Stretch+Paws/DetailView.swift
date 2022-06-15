@@ -79,6 +79,7 @@ struct TimerPanelView: View {
             .foregroundColor(Color("Secondary"))
             .frame(maxWidth: .infinity, maxHeight: timerOpen ? 400 : 80)
             .background(RoundedCornersShape(corners: [.topLeft, .topRight], radius: 20).fill(Color("Highlight")))
+            .animation(Animation.easeInOut(duration: 0.25), value: timerOpen)
             
         }
         .ignoresSafeArea()
